@@ -1,0 +1,8 @@
+{
+  "name": "jenkins-lab",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node app.js",
+    "test": "node test.js"
+  }
+}
