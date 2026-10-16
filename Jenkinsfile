@@ -1,18 +1,18 @@
-pipeline {
+pipeline{
     agent any
-    stages {
+    stages{
         stage('Install') {
-            steps {
+            steps{
                 bat 'npm install'
             }
         }
-        stage('Build') {
-            steps {
+        stage('Build'){
+            steps{
                 bat 'npm run build'
             }
         }
-        stage('Test') {
-            steps {
+        stage('Test'){
+            steps{
                 bat 'npm test'
             }
         }
