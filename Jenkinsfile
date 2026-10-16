@@ -1,24 +1,22 @@
 pipeline {
     agent any
+
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/HARDEN-DRAGON/myrepo.git'
-            }
-        }
         stage('Install') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
+
         stage('Build') {
             steps {
-                sh 'npm run build'
+                bat 'npm run build'
             }
         }
+
         stage('Test') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
     }
